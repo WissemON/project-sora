@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sofia+Sans:wght@100&display=swap");
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 22%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 22%;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 13vh;
+}
+
+@font-face {
+  font-family: "KH2Menu";
+  src: url(./ressources/fonts/KH2_ALL_MENU_I.TTF);
+}
+@font-face {
+  font-family: "KH2txt";
+  src: url(./ressources/fonts/DFPW5_EUR.ttf);
+}
+nav {
+  width: 100%;
+  height: 14%;
+  background: linear-gradient(184deg, rgb(2, 0, 36) 0%, rgb(0, 52, 172) 100%);
+  border-bottom: 3px #0434F9 solid;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menubar button {
+  padding: 3px 30px;
+}
+
+.bgmenu {
+  background-color: #004BFE;
+  border-radius: 0 9999px 9999px 0;
+  box-shadow: 10px 10px 10px black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.dans {
+  display: flex;
+  flex-direction: row;
+}
+
+.Desc {
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: left;
+  color: whitesmoke;
+}
+.Desc__size {
+  font-size: 1rem;
+}
+
+.section1 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.size-img {
+  width: 25%;
+}
+
+.khmenu {
+  font-family: "KH2Menu", Arial, sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.khmenufont {
+  font-family: "KH2Menu", Arial, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 10px 10px black;
+}
+.link__nav {
+  font-size: 3rem;
+  color: rgb(0, 110, 255);
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #ef9321;
+}
+
+.section2 {
+  width: 100%;
+  font-family: "Open Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sect2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bg2 {
+  background: linear-gradient(180deg, rgb(172, 120, 0) 0%, rgb(145, 121, 64) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./ressources/divetotheheartart.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(10rem);
+          backdrop-filter: blur(10rem);
+}
+
+.backdrop {
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#icone {
+  width: 20%;
+  opacity: 1;
+  margin: auto;
+  z-index: -1000;
+}
+
+.flexin1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  width: 20%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flexin2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  width: 20%;
+}
+
+.flexin3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  width: 20%;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  font-family: "KH2txt", Arial, sans-serif;
+  width: 22%;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  display: none;
+}
+
+.show {
+  display: block;
+  transition: width 5s;
+  -webkit-animation: 2s slidein;
+          animation: 2s slidein;
+}
+
+li.bg-menu {
+  background: linear-gradient(100deg, rgb(0, 0, 0) 47%, rgb(81, 81, 84) 100%);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.8;
+  padding: 3px;
+  border-top: 1mm ridge rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px black;
+}
+li.bg-menu a {
+  color: white;
+}
+li.bg-menu:hover {
+  background: linear-gradient(100deg, rgb(179, 0, 1) 0%, rgb(228, 0, 1) 100%);
+  box-shadow: 5px 5px 15px 5px #bcb136;
+  border-top: 1mm ridge rgba(255, 255, 255, 0.8);
+  margin-left: 5%;
+}
+
+.margpad {
+  padding-left: 15px;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.logoserv {
+  width: 12rem;
+  height: 12rem;
+}
+
+figcaption {
+  font-family: "KH2txt", Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: none;
+}
+
+.discord:hover {
+  transition: all 0.5s 0s ease, text-shadow 0.5s 0s ease;
+  -webkit-animation: pulse 1.5s ease-in-out infinite;
+          animation: pulse 1.5s ease-in-out infinite;
+}
+
+figcaption {
+  text-shadow: 5px 5px 5px black;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+}
+
+.acc {
+  padding-right: 2rem;
+  font-family: "Roboto Slab", serif;
+}
+
+figure > img:hover, figcaption:hover {
+  filter: drop-shadow(16px 16px 20px rgb(255, 255, 255));
+}
+
+hr {
+  position: absolute;
+  right: 0%;
+  bottom: 20%;
+  height: 4px;
+  width: 50%;
+  border: none;
+  background: linear-gradient(to left, rgb(239, 147, 33) 0%, rgba(239, 147, 33, 0.5) 75%, rgba(239, 147, 33, 0) 100%);
+}/*# sourceMappingURL=main.css.map */

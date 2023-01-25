@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sofia+Sans:wght@100&display=swap");
+@font-face {
+  font-family: "KH2Menu";
+  src: url(./ressources/fonts/KH2_ALL_MENU_I.TTF);
+}
+@font-face {
+  font-family: "KH2txt";
+  src: url(./ressources/fonts/DFPW5_EUR.ttf);
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 22%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 22%;
+  }
+}
+@-webkit-keyframes moveBG {
+  from {
+    background-position: 1000px;
+  }
+  to {
+    background-position: center;
+  }
+}
+@keyframes moveBG {
+  from {
+    background-position: 1000px;
+  }
+  to {
+    background-position: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.acc {
+  padding-right: 2rem;
+  font-family: "Roboto Slab", serif;
+}
+
+nav {
+  width: 100%;
+  height: 14%;
+  background: linear-gradient(184deg, rgb(2, 0, 36) 0%, rgb(0, 52, 172) 100%);
+  border-bottom: 3px #0434F9 solid;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 10px 10px black;
+}
+.link__nav {
+  font-size: 3rem;
+  color: rgb(0, 110, 255);
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+  height: 13vh;
+  width: 100%;
+}
+
+main {
+  height: 180vh;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flex__justify {
+  justify-content: center;
+  align-items: center;
+}
+
+.bgmenu {
+  background-color: #004BFE;
+  border-radius: 0 9999px 9999px 0;
+  box-shadow: 10px 10px 10px black;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  font-family: "KH2txt", Arial, sans-serif;
+  width: 22%;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  display: none;
+}
+
+.show {
+  display: block;
+  transition: width 5s;
+  -webkit-animation: 2s slidein;
+          animation: 2s slidein;
+}
+
+.khmenu {
+  font-family: "KH2Menu", Arial, sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.menubar button {
+  padding: 3px 30px;
+}
+
+hr {
+  position: absolute;
+  right: 0%;
+  bottom: 20%;
+  height: 4px;
+  width: 50%;
+  border: none;
+  background: linear-gradient(to left, rgb(239, 147, 33) 0%, rgba(239, 147, 33, 0.5) 75%, rgba(239, 147, 33, 0) 100%);
+}
+
+.khmenufont {
+  font-family: "KH2Menu", Arial, sans-serif;
+}
+
+li.bg-menu {
+  background: linear-gradient(100deg, rgb(0, 0, 0) 47%, rgb(81, 81, 84) 100%);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.8;
+  padding: 3px;
+  border-top: 1mm ridge rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px black;
+}
+li.bg-menu a {
+  color: white;
+}
+li.bg-menu:hover {
+  background: linear-gradient(100deg, rgb(179, 0, 1) 0%, rgb(228, 0, 1) 100%);
+  box-shadow: 5px 5px 15px 5px #bcb136;
+  border-top: 1mm ridge rgba(255, 255, 255, 0.8);
+  margin-left: 5%;
+}
+
+.margpad {
+  padding-left: 15px;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.bg-main {
+  background-image: url("./ressources/MUs/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Desc {
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: left;
+  color: whitesmoke;
+  margin: auto;
+}
+.Desc__size {
+  font-size: 1rem;
+}
+
+.bg-card {
+  background-image: url("./ressources/MUs/mid_weight_temp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  transition: all 300ms ease;
+}
+.bg-card:hover {
+  transform: translateY(-10%);
+  transition: all 300ms ease;
+}
+.bg-card:hover .bg_map {
+  background-image: url("./ressources/MUs/cards/mario_card_bg.png");
+  background-size: 101%;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 100%;
+  height: 130%;
+}
+
+.bg-card_char {
+  width: 100%;
+  background: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem;
+  gap: 5rem;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 30%;
+  padding: 12px;
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  border-width: 0.02rem;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 14px;
+  box-shadow: 0px 0px 10em rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 5em rgba(21, 72, 241, 0.75);
+}
+
+figure {
+  width: 12%;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
+}
+
+.legend-card {
+  width: 100%;
+}/*# sourceMappingURL=match_up-s.css.map */
