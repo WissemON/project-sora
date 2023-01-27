@@ -12,7 +12,7 @@ $fontRoboto: 'Roboto Slab', serif;
   
     to {
       margin-left: 0%;
-      width: 22%;
+      width: 33rem;
     }
   }
 
@@ -105,6 +105,7 @@ nav {
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 form {
@@ -162,6 +163,7 @@ h2 {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
 }
 
 #sect2 {
@@ -169,6 +171,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -236,7 +239,7 @@ ul {
 }
 .dropdown-content {
     font-family: $fontTxtKH;
-    width: 22%;
+    width: 33rem;
     color: white;
     font-size: 2rem;
     position: absolute;
@@ -246,7 +249,7 @@ ul {
 .show {
     display: block;
     transition: width 5s;
-    animation: 2s slidein;
+    animation: 1s slidein;
 }
 
 
@@ -258,6 +261,7 @@ opacity: 0.8;
 padding: 3px;
 border-top: 1mm ridge rgb(255, 255, 255);
 box-shadow: 2px 2px 2px black;
+list-style-type: none;
  a {
     color: white;
  }
@@ -330,6 +334,7 @@ figure > img:hover, figcaption:hover {
 
 hr {
     position: absolute;
+    z-index: -1;
     right: 0%;
     bottom: 20%;
     height: 4px;
@@ -341,3 +346,46 @@ hr {
         rgba(239, 147, 33, 0.5) 75%,
         rgba(239, 147, 33, 0) 100% );
 }
+
+@media (max-width:915px) {
+       .section1 {
+        flex-direction: column;
+       }
+       .Desc {
+        width: 50%;
+       }
+}
+
+@media (max-width:645px) {
+    .section1 {
+     flex-direction: column;
+    }
+    .Desc {
+     width: 50%;
+    }
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+    };
+}
+
+@media (max-width:583px) {
+     .dropbtn {
+                width: 13rem;
+            }
+            .khmenu {
+                font-size: 2.1rem;
+            }
+
+            .dropbtn {
+                width: 13rem;
+            }
+
+            .link__nav {
+              font-size: 2rem;
+            }
+  .Desc {
+    width: 100%;
+    text-align: center;
+  }
+          }

@@ -7,7 +7,7 @@
   }
   to {
     margin-left: 0%;
-    width: 22%;
+    width: 33rem;
   }
 }
 @keyframes slidein {
@@ -17,7 +17,7 @@
   }
   to {
     margin-left: 0%;
-    width: 22%;
+    width: 33rem;
   }
 }
 @-webkit-keyframes pulse {
@@ -118,6 +118,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 form {
@@ -174,6 +175,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #sect2 {
@@ -181,6 +183,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .bg2 {
@@ -251,7 +254,7 @@ ul {
 
 .dropdown-content {
   font-family: "KH2txt", Arial, sans-serif;
-  width: 22%;
+  width: 33rem;
   color: white;
   font-size: 2rem;
   position: absolute;
@@ -261,8 +264,8 @@ ul {
 .show {
   display: block;
   transition: width 5s;
-  -webkit-animation: 2s slidein;
-          animation: 2s slidein;
+  -webkit-animation: 1s slidein;
+          animation: 1s slidein;
 }
 
 li.bg-menu {
@@ -273,6 +276,7 @@ li.bg-menu {
   padding: 3px;
   border-top: 1mm ridge rgb(255, 255, 255);
   box-shadow: 2px 2px 2px black;
+  list-style-type: none;
 }
 li.bg-menu a {
   color: white;
@@ -328,10 +332,50 @@ figure > img:hover, figcaption:hover {
 
 hr {
   position: absolute;
+  z-index: -1;
   right: 0%;
   bottom: 20%;
   height: 4px;
   width: 50%;
   border: none;
   background: linear-gradient(to left, rgb(239, 147, 33) 0%, rgba(239, 147, 33, 0.5) 75%, rgba(239, 147, 33, 0) 100%);
+}
+
+@media (max-width: 915px) {
+  .section1 {
+    flex-direction: column;
+  }
+  .Desc {
+    width: 50%;
+  }
+}
+@media (max-width: 645px) {
+  .section1 {
+    flex-direction: column;
+  }
+  .Desc {
+    width: 50%;
+  }
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 583px) {
+  .dropbtn {
+    width: 13rem;
+  }
+  .khmenu {
+    font-size: 2.1rem;
+  }
+  .dropbtn {
+    width: 13rem;
+  }
+  .link__nav {
+    font-size: 2rem;
+  }
+  .Desc {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

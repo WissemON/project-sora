@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sora's Bedroom - Carte</title>
+    <link rel="stylesheet" href="./map.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="flex">
+                    <div class="dropdown">
+                        <div class="menubar"><button onclick="myFunction()" class="dropbtn link khmenu bgmenu sizeres">Menu</button>
+                        </div>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <ul>
+                                <li class="bg-menu msargpad" id="items"><a href="./index.html" class="link khmenufont">General</a></li> <br>
+                                <li class="bg-menu margpad" id="abili" class="link"><a href="./match_up.html" class="link khmenufont">Match-ups</a></li><br>
+                                <li class="bg-menu margpad" id="custo"><a href="" class="link khmenufont">Customize</a></li><br>
+                                <li class="bg-menu margpad" id="party"><a href="./map.html" class="link khmenufont">Carte</a></li><br>
+                                <li class="bg-menu margpad" id="status" id="bar"><a href="" class="link khmenufont">Status</a></li><br>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dans">
+                        <div class="acc"><a href="" class="link link__nav">Carte</a>
+                        </div>
+                        
+                    </div>
+    
+                    <hr>
+                
+                
+            </nav>
+    </header>
+
+    <main>
+     <section class="sec1">
+        <figure><figcaption>Carte FR</figcaption><img src="./ressources/map/map_sora_v1.2.png" alt="Carte des joueurs Sora français" class="map"></figure>
+            
+        <br> 
+
+        <figure><figcaption>Carte Monde</figcaption><img src="./ressources/map/map_sora_world.png" alt="Carte des joueurs Sora du monde entier" class="map"></figure>
+     </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Script à la fin pour que ça charge mieux -->
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              let openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

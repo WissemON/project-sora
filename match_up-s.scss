@@ -24,7 +24,7 @@ $fontRoboto: 'Roboto Slab', serif;
   
     to {
       margin-left: 0%;
-      width: 22%;
+      width: 28rem;
     }
   }
 
@@ -85,12 +85,12 @@ header {
 }
 
 main {
-    height: 180vh;
     width: 100%;
 }
 .flex {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 
    &__justify {
     justify-content: center;
@@ -111,7 +111,7 @@ main {
 
 .dropdown-content {
     font-family: $fontTxtKH;
-    width: 22%;
+    width: 28rem;
     color: white;
     font-size: 2rem;
     position: absolute;
@@ -121,7 +121,7 @@ main {
 .show {
     display: block;
     transition: width 5s;
-    animation: 2s slidein;
+    animation: 1s slidein;
 }
 
 .khmenu {
@@ -137,6 +137,7 @@ main {
 
 hr {
     position: absolute;
+    z-index: -1;
     right: 0%;
     bottom: 20%;
     height: 4px;
@@ -161,6 +162,7 @@ li.bg-menu {
     padding: 3px;
     border-top: 1mm ridge rgb(255, 255, 255);
     box-shadow: 2px 2px 2px black;
+    list-style-type: none;
      a {
         color: white;
      }
@@ -212,7 +214,6 @@ li.bg-menu {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
     transition: all 300ms ease;
     &:hover {
         transform: translateY(-10%);
@@ -229,6 +230,14 @@ li.bg-menu {
     }
 }
 
+a {
+    width: 100%;
+}
+
+.MUs-cards {
+   padding: 2rem;
+   width: 100%;
+}
 
 .card {
     width: 100%;
@@ -249,6 +258,7 @@ li.bg-menu {
     grid-template-columns: 15rem 15rem 15rem ;
     gap: 5rem;
     justify-content: center;
+    width: 100%;
 
 }
 
@@ -258,7 +268,7 @@ form {
 }
 
 input {
-    width: 30%;
+    width: 25rem;
     padding: 12px;
     font-family: $fontRoboto;
      font-size: 1rem;
@@ -273,14 +283,74 @@ input {
 }
 
 figure {
-    width: 12%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 figcaption {
     color: white;
     text-align: center;
+    font-family: $fontRoboto;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .legend-card {
     width: 100%;
 }
+
+
+
+
+@media (max-width: 881px) { 
+    .grid-cards {
+        grid-template-columns: 15rem 15rem;
+    }
+    }
+
+    @media (max-width: 648px) { 
+        .dropbtn {
+            width: 18rem;
+        }
+        .khmenu {
+            font-size: 3rem;
+        }
+        }
+
+        @media (max-width: 573px) { 
+            .grid-cards {
+                grid-template-columns: 15rem;
+            }
+
+            .dropbtn {
+                width: 13rem;
+            }
+            .khmenu {
+                font-size: 2.1rem;
+            }
+
+            .link__nav {
+              font-size: 2rem;
+            }
+            }
+
+            @media (max-width: 419px) {
+                .link__nav {
+                    font-size: 1rem;
+                }
+            }
+
+            // Media pour la liste 
+            @media (max-width: 627px) { 
+                
+               .dropbtn {
+                   width: 100%;
+               }
+               .khmenu {
+                   font-size: 2rem;
+               }
+                }

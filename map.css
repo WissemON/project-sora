@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sofia+Sans:wght@100&display=swap");
+@font-face {
+  font-family: "KH2Menu";
+  src: url(./ressources/fonts/KH2_ALL_MENU_I.TTF);
+}
+@font-face {
+  font-family: "KH2txt";
+  src: url(./ressources/fonts/DFPW5_EUR.ttf);
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 33rem;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 33rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.acc {
+  padding-right: 2rem;
+  font-family: "Roboto Slab", serif;
+}
+
+nav {
+  width: 100%;
+  height: 14%;
+  background: linear-gradient(184deg, rgb(2, 0, 36) 0%, rgb(0, 52, 172) 100%);
+  border-bottom: 3px #0434F9 solid;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 10px 10px black;
+}
+.link__nav {
+  font-size: 3rem;
+  color: rgb(0, 110, 255);
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+  height: 13vh;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flex__justify {
+  justify-content: center;
+  align-items: center;
+}
+
+.bgmenu {
+  background-color: #004BFE;
+  border-radius: 0 9999px 9999px 0;
+  box-shadow: 10px 10px 10px black;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  font-family: "KH2txt", Arial, sans-serif;
+  width: 28rem;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  display: none;
+}
+
+.show {
+  display: block;
+  transition: width 5s;
+  -webkit-animation: 1s slidein;
+          animation: 1s slidein;
+}
+
+.khmenu {
+  font-family: "KH2Menu", Arial, sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.menubar button {
+  padding: 3px 30px;
+}
+
+hr {
+  position: absolute;
+  z-index: -1;
+  right: 0%;
+  bottom: 20%;
+  height: 4px;
+  width: 50%;
+  border: none;
+  background: linear-gradient(to left, rgb(239, 147, 33) 0%, rgba(239, 147, 33, 0.5) 75%, rgba(239, 147, 33, 0) 100%);
+}
+
+.khmenufont {
+  font-family: "KH2Menu", Arial, sans-serif;
+}
+
+li.bg-menu {
+  background: linear-gradient(100deg, rgb(0, 0, 0) 47%, rgb(81, 81, 84) 100%);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.8;
+  padding: 3px;
+  border-top: 1mm ridge rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px black;
+  list-style-type: none;
+}
+li.bg-menu a {
+  color: white;
+}
+li.bg-menu:hover {
+  background: linear-gradient(100deg, rgb(179, 0, 1) 0%, rgb(228, 0, 1) 100%);
+  box-shadow: 5px 5px 15px 5px #bcb136;
+  border-top: 1mm ridge rgba(255, 255, 255, 0.8);
+  margin-left: 5%;
+}
+
+.margpad {
+  padding-left: 15px;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  background: url("./ressources/map/wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding-top: 8%;
+  padding-left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.map {
+  border-radius: 1%;
+}
+
+.sec1 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  font-family: "KH2Menu", Arial, sans-serif;
+  color: #004BFE;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 627px) {
+  figcaption {
+    font-size: 2rem;
+  }
+  .dropbtn {
+    width: 100%;
+  }
+  .khmenu {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=map.css.map */
